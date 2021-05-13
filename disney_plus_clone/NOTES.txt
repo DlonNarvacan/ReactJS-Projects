@@ -1,0 +1,57 @@
+===== REACT JS - REDUX - STYLED COMPONENTS - FIREBASE =====
+
+CREATE A REACTJS(REDUX) PROJECT FOLDER
+>npx create-react-app disney_plus_clone --template redux
+
+>goto "yarn.lock" file then open in terminal
+	>then type "npm start"
+		- it opens your project (App.js) on your default browser
+
+>delete "App.test.js" and "logo.svg" 
+	>also erase the import of them into your App.js file
+
+>erase all the code of App.css
+
+--------- format your App.js to this (Starting from a scratch) ----------
+
+	import React from 'react';
+	import './App.css';
+
+	function App() {
+  	return (
+  	  <div className="App">
+  	    Hello
+  	  </div>
+  	);
+	}
+
+	export default App;
+-------------------------------------------------------------------------
+
+>create a new folder inside your "src" directory
+
+PLANNING
+Part 1 - Header
+Part 2 - Slider
+Part 3 - Viewer
+Part 4 - Movie List 
+
+>create a Header.js file inside the "components" directory
+	> type rfce then enter
+
+>import Header from './components/Header' into "App.js"
+>import styled from 'styled-components' into "./components/Header.js/"
+>in Header.js file, change <div></div> into <Container>
+	>create a method
+		const Container = styled.div
+		`
+			height:70x
+			background: #090b13;	
+		`	
+>create Home.js in components directory
+>import Home from './components/Home'
+>change <Container> into <Nav>
+	> a navigation used by styled components
+
+
+	
